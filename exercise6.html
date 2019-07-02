@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Media Queries: Exercise 3</title>
+    <style>
+    img {
+    max-width: 100%;
+}
+
+.img-gallery {
+    background-color: black;
+    border: 10px solid black;
+}
+
+@media only screen and (max-width: 767px){
+    body {
+        margin: 0;
+        font-family:'Courier New', Courier, monospace;
+        font-size: 0.5rem;
+    }
+    li {
+        padding: 2px;
+    }
+    img {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        margin: 4px;
+        background-color: lightgray;
+        
+    }
+    img {
+        width:50%;
+    }
+}
+@media only screen and (min-width: 1024px){
+    body {
+        font-size: 2rem;
+        background-color: purple;
+    }
+    img {
+        width: 33.33%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Media Queries</h1>
+        <p>Complete the three tasks to add styling to the page at different breakpoints</p>
+
+            <h2>Task 1: Mobile-First</h2>
+            <ol>
+                <li>Remove the margin on the body</li>
+                <li>Change the font-family</li>
+                <li>Make the font-size larger</li>
+                <li>Add spacing between the list items</li>
+            </ol>
+
+            <h2>Task 2: Break point at 768px</h2>
+
+            <ol>
+                <li>Add margin around the edges of the page</li>
+                <li>Make the images display in two columns</li>
+                <li>Change the background color of the page to a light grey</li>
+            </ol>
+
+            <div class="img-gallery">
+                <img src="https://www.gstatic.com/webp/gallery/1.jpg" alt="Image of mountains"><img src="https://www.gstatic.com/webp/gallery/4.webp" alt="Image of tree"><img src="https://www.gstatic.com/webp/gallery/2.jpg" alt="Water sports">
+            </div>
+
+            <h2>Task 3: Breakpoint at 1024px</h2>
+            <ol>
+                <li>Make all the images display side-by-side</li>
+                <li>Change the background color of the page to purple</li>
+                <li>Adjust the font-size to be 2x the browser default (use the rem unit for that)</li>
+            </ol>
+            
+    </main>
+</body>
+</html>

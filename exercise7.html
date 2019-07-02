@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+     
+       ul {  
+             display: flex;
+             
+             list-style-type: none;
+       }
+       li {
+             padding: 5px;
+             border: 1px solid black;
+             background-color: lightskyblue;
+
+             
+             flex-grow: 1;
+             
+       }
+       @media only screen and (max-width: 400px) {
+           ul {
+               flex-direction: column;
+           }
+       }
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li>Homepage</li> 
+        <li>Portfolio</li>
+        <li>Contact</li>
+        <li>About us</li>
+        <li>Shop</li>
+    </ul>
+    
+</body>
+</html>

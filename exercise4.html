@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Media Queries: Exercise 2</title>
+    <style>
+    @media only screen and (max-width: 480px) {
+    
+    body {
+        background-color: black;
+    }
+    h1 {
+        color: aliceblue;
+
+    }
+    p {
+        color: aqua;
+    }
+    li {
+        color: coral;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 760px) {
+    
+    body {
+        background-color:darkblue;
+    }
+    h1 {
+        color: rgb(189, 118, 85);
+
+    }
+    p {
+        color: rgb(0, 255, 34);
+    }
+    li {
+        color: rgb(243, 255, 80);
+    }
+}
+@media only screen and (min-width: 761px) and (max-width: 900px) {
+    
+    body {
+        background-color: green;
+    }
+    h1 {
+        color: aliceblue;
+
+    }
+    p {
+        color: aqua;
+    }
+    li {
+        color: coral;
+    }
+}
+@media only screen and (min-width: 901px){}
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>Media Queries: Exercise 2</h1>
+        <p>Change the style of the page at different breakpoints!</p>
+        <ol>
+            <li>Style the page for mobile: add a margin, change the font-size & font-family etc.</li>
+            <li>Add a breakpoint for tablets. Change the styling of the page (margin, font-size, padding etc.) & change the font color</li>
+            <li>Add another breakpoint for desktop. Change the styling of the page & style the first letter of these list items</li>
+        </ol>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Queries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        div {
+            display: none;
+            font-size: 2rem;
+        }
+        @media only screen and (max-width: 480px) {
+            .a {
+                display: block;
+            }
+            body {
+                background-color: red;
+            }
+        }
+        @media only screen and (min-width: 481px) and (max-width: 760px) {
+            .b {
+                display: block;
+            }
+            body {
+                background-color: yellow;
+            }
+        }
+        @media only screen and (min-width: 761px) and (max-width: 900px) {
+            .c {
+                display: block;
+            }
+            body {
+                background-color: green;
+            }
+        }
+        @media only screen and (min-width: 901px) {
+            .d {
+                display: block;
+            }
+            body {
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <!-- max-width: 480px -->
+        I am a small phone!
+    </div>
+    <div class="b">
+        <!-- min-width: 481px and  max-width: 768px -->
+        I am a small phone or a small tablet!
+    </div>
+    <div class="c">
+        <!-- min-width: 769px and max-width: 1024px -->
+        I am a large tablet or a small laptop!
+    </div>
+    <div class="d">
+        <!-- min-width: 1025px -->
+        I am a small laptop or large laptop!
+    </div>
+</body>
+</html>
