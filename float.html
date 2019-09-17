@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shapes - Exercise #1 - Floaty circle gallery</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    article {
+      margin: 20px 0;
+    }
+    article img {
+      border: 1px solid;
+      margin-right: 10px;
+      border-radius: 100%;
+      shape-outside: circle();
+    }
+    main :nth-child(odd) img {
+        float: left;
+    }
+    main :nth-child(even) img {
+        float: right;
+    }
+    
+    article::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    
+  </style>
+</head>
+
+<body>
+<main>
+    <article><img src="http://unsplash.it/100/100" alt=""><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi pariatur, vero, nam laborum atque similique non sequi neque aliquid iure, unde quos illum delectus reiciendis earum quam culpa iste!</span></article>
+    <article><img src="http://unsplash.it/100/100" alt=""><span>Error a natus delectus alias autem fugiat unde quam deserunt reprehenderit, nam distinctio qui ab quibusdam deleniti doloribus fugit, harum, aliquid ipsa minima placeat. Magnam, quae? Dignissimos sit blanditiis deleniti.</span></article>
+    <article><img src="http://unsplash.it/100/100" alt=""><span>Corrupti ipsam consequuntur maiores suscipit modi sequi architecto repudiandae rem corporis voluptatum ipsum veniam placeat sit recusandae illo laudantium beatae voluptates, aliquid optio! Rerum rem recusandae, corporis et autem facere?</span></article>
+    <article><img src="http://unsplash.it/100/100" alt=""><span>Eligendi consequuntur at placeat totam velit reiciendis, nobis aut corrupti sunt nisi, qui praesentium excepturi facilis laudantium? Optio quaerat error dicta, iusto rerum, magnam iure praesentium consequatur delectus, ut cum?</span></article>
+    <article><img src="http://unsplash.it/100/100" alt=""><span>Corrupti quos dolorum omnis doloribus praesentium in minima doloremque cupiditate quidem minus unde optio architecto eos similique nulla nam, laboriosam, eum hic totam repellat aut saepe quae harum sit. Soluta.</span></article>
+</main>
+  <!-- 
+    
+   What to build: A main tag containing five article tags.
+   
+   Each article should look like this:
+   <article>
+      <img src="//unsplash.it/100/100" alt="">
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facere rerum ex rem fugiat obcaecati iure
+        vero eaque eveniet cumque, nobis, veniam, magni dicta eum placeat. Dolore accusamus perferendis iste.
+      </span>
+  </article>
+    Create everything with one line of emmet
+   -->
+
+</body>
+
+</html>

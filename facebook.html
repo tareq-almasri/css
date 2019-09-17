@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            margin: 0;
+            height: 850px;
+
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            flex-basis: 85px;
+            background-color: #3B5998;
+            width: 100%;
+        }
+
+        main {
+            display: flex;
+
+            flex-basis: 600px;
+            background-color: #EDF0F5;
+
+        }
+
+        footer {
+            flex-grow: 1;
+            background-color: white;
+        }
+
+        h1 {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 150px;
+            font-size: 40px;
+            margin-bottom: 5px;
+
+        }
+
+        .form-inline {
+            margin-right: 150px;
+            height: 45px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-self: center;
+            width: 400px;
+            justify-content: space-around;
+
+        }
+
+        #email,
+        #pwd {
+            margin-bottom: 2px;
+            width: 150px;
+            height: 24px;
+            border: 1px solid rgb(39, 39, 46);
+        }
+
+        header label {
+            color: white;
+            font-size: 12px;
+            font-family: sans-serif;
+            margin-bottom: 5px;
+        }
+
+        #lbtn {
+            width: 60px;
+            margin-top: 17px;
+            color: white;
+            font-weight: 600;
+            background-color: #4272cc;
+            border: 1px solid #214280;
+            padding: 4px;
+            border-radius: 2px;
+        }
+
+
+        .form2 {
+            display: flex;
+
+            flex-wrap: wrap;
+            padding-right: 10px;
+
+
+            width: 410px;
+            height: 150px;
+
+        }
+
+
+        .form2 input {
+            padding: 10px;
+            font-size: 16px;
+
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid rgb(161, 187, 197);
+        }
+
+        #right {
+            width: 410px;
+            height: 400px;
+        }
+
+        #firstN,
+        #lastN {
+            width: 190px;
+
+
+        }
+
+        #email2,
+        #pwd2 {
+            width: 405px;
+        }
+
+        #green {
+            background-color: #659D50;
+            color: white;
+            font-size: 18px;
+            font-weight: 800;
+            padding: 8px;
+            width: 200px;
+            border-radius: 5px;
+            border: 1px solid green;
+
+        }
+
+        #left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 730px;
+            height: 430px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 20px;
+            color: #3F3E39;
+        }
+
+        h3 {
+            display: inline;
+        }
+
+        i {
+            width: 70px;
+            color: rgb(169, 175, 184);
+        }
+
+        #right>p {
+            color: #3F3E39;
+            font-size: 18px;
+            margin-top: 0;
+        }
+
+        #right>h2 {
+            margin-bottom: 0;
+            font-size: 35px;
+            color: #3F3E39;
+        }
+
+        #left>h2 {
+            margin-right: 60px;
+            font-size: 27px;
+            color: #3F3E39;
+        }
+
+        #birthday>select {
+            padding: 5px;
+            background-color: white;
+            border: 1px solid rgb(161, 187, 197);
+        }
+
+        #birthday p,
+        #gender p {
+            color: rgb(158, 161, 165);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        #blah p {
+            width: 350px;
+            font-size: 12px;
+            color: rgb(112, 117, 124);
+        }
+
+        a {
+            text-decoration: none;
+            color: #365ea7;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #lbtn:hover {
+            background-color: #30518f;
+            cursor: pointer;
+        }
+
+        #green:hover {
+            background-color: green;
+            cursor: pointer;
+        }
+
+        #right span {
+            color: rgb(100, 102, 107);
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+
+            background-image: linear-gradient(rgb(226, 229, 238), rgb(199, 205, 223));
+            margin: 22px 0px;
+        }
+
+        footer {
+            text-align: center;
+            width: 800px;
+            align-self: center;
+            padding-top: 10px;
+            font-size: 14px;
+            color: dimgrey;
+        }
+
+        footer ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        #gender label {
+            font-size: 18px;
+            color: rgb(46, 45, 41);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>facebook</h1>
+
+        <form class="form-inline" action="/action_page.php">
+            <label for="email">Email or Phone</label>
+            <input type="email" id="email" name="email">
+            <label for="password">Password</label>
+            <input type="password" id="pwd" name="pswd">
+
+            <button type="submit" id="lbtn">Log In</button>
+        </form>
+
+    </header>
+    <main>
+        <div id="left">
+            <h2>Connect with friends and the<br>
+                world around you on Facebook.</h2>
+            <ul>
+                <li><i class="far fa-newspaper fa-3x"></i>
+                    <h3>See photos and updates</h3> from friends in News Feed.
+                </li>
+                <li><i class="fas fa-external-link-alt fa-3x"></i>
+                    <h3>Share what's new</h3> in your life on your Timeline.
+                </li>
+                <li><i class="fas fa-share-alt fa-3x"></i>
+                    <h3>Find more</h3> of what you're looking for with Facebook Search.
+                </li>
+            </ul>
+        </div>
+        <div id="right">
+            <h2>Sign Up</h2>
+            <p> It’s quick and easy.</p>
+            <form class="form2" action="/action_page.php">
+
+                <input type="name" id="firstN" placeholder="First name" name="lol">
+                <input type="name" id="lastN" placeholder="Last name" name="lol">
+                <input type="email" id="email2" placeholder="Mobile number or email" name="email">
+                <input type="password" id="pwd2" placeholder="New password" name="pswd">
+
+            </form>
+            <div id="birthday">
+                <p>Birthday</p>
+                <select>
+                    <option value="0">Month</option>
+                    <option value="1">Jan</option>
+                    <option value="3">Feb</option>
+                    <option value="4">Mar</option>
+                    <option value="5">Apr</option>
+                    <option value="6">May</option>
+                    <option value="7">Jun</option>
+                    <option value="8">Jul</option>
+                    <option value="9">Aug</option>
+                    <option value="10">Sep</option>
+                    <option value="11">Oct</option>
+                    <option value="12">Nov</option>
+                    <option value="13">Dec</option>
+                </select><select>
+                    <option value="0">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select><select>
+                    <option value="0">Year</option>
+                    <option value="1">1995</option>
+                    <option value="2">1994</option>
+                    <option value="3">1993</option>
+                    <option value="4">1992</option>
+                    <option value="5">1991</option>
+                    <option value="6">1990</option>
+                    <option value="7">1989</option>
+                    <option value="8">1988</option>
+                    <option value="9">1987</option>
+                    <option value="10">1986</option>
+                    <option value="11">1985</option>
+                    <option value="12">1984</option>
+                    <option value="13">1983</option>
+                    <option value="14">1982</option>
+                    <option value="15">1981</option>
+                </select>
+            </div>
+            <div id="gender">
+                <p>Gender</p>
+                <label><input type="radio" name="rr">Female</label> <label><input type="radio" name="rr">Male</label> <label><input
+                        type="radio" name="rr">Custom</label>
+            </div>
+            <div id="blah">
+                <p>By clicking Sign Up, you agree to our <a href="#">Terms.</a> Learn how we collect, use and share your
+                    data in our
+                    <a href="#">Data Policy</a> and how we use cookies and similar technology in our <a href="#">Cookies
+                        Policy.</a> You may receive SMS
+                    Notifications from us and can opt out any time.</p>
+            </div>
+            <button id="green" type="submit">Sign Up</button>
+            <hr>
+            <span><a href="#">Create a Page</a> for a celebrity, band or business.
+            </span>
+        </div>
+
+
+
+
+
+    </main>
+    <footer>
+        <span>English</span> <a href="#">Deutsch</a> <a href="#">Türkçe</a> <a href="#">Polski</a> <a
+            href="#">Italiano</a> <a href="#">Română
+        </a> <a href="#">Français</a> <a href="#">العربية
+        </a>
+        <hr>
+        <ul>
+            <li>Sign Up</li>
+            <li>footer</li>
+            <li>footer</li>
+            <li>footer</li>
+            <li>footer</li>
+            <li>footer</li>
+        </ul>
+        Facbook &copy; 2019
+    </footer>
+
+</body>
+
+</html>

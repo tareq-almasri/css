@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pseudo elements - exercise 1</title>
+  <style>
+    
+    img {
+      width: 32px;
+      height: 32px;
+    }
+    li::before, li::after{
+        content: '';
+        background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/161359/quotes.png);
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+    }
+    li::after {
+        transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>The unlucky, naked quotes - give them back their clothes!</h1>
+
+  <p>First: Generate a UL list with 10 list items below these paragraphs. Each item should have lorem text. The ul should have the id "quotes". Use one line of emmet only to create the complete list</p>
+  <p>Then: Please insert this given quote icon <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/161359/quotes.png" /> BEFORE and AFTER each quote! Apply background-size contain to fit it into the given height / width that you give it</p>
+   <ul id="quotes">
+       <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex provident porro nulla facere excepturi, facilis fugit nihil mollitia, soluta quos earum possimus nostrum dolor itaque non reprehenderit ad voluptatum eos!</li>
+       <li>Aliquid nam dolor, dolorum eum beatae et? Soluta iure sunt obcaecati quo error quae, quod repudiandae suscipit optio accusantium, repellendus, praesentium maiores sit distinctio inventore placeat illum voluptas quibusdam. Nam!</li>
+       <li>Quibusdam aliquam harum earum error eaque, id unde aspernatur esse explicabo debitis facilis dicta eos aliquid ipsum blanditiis repudiandae optio recusandae soluta sint provident, qui similique laborum consequatur corporis! Dignissimos!</li>
+       <li>Hic beatae fuga dolores provident magnam aliquam eveniet reiciendis asperiores quos sint minus officiis voluptas, quidem eaque illo magni error nobis placeat harum soluta repellat veniam culpa! Voluptates, tempora rerum.</li>
+       <li>Officiis ipsam atque nesciunt facilis, ratione sequi doloribus molestiae! Rerum ullam quisquam dicta porro obcaecati reiciendis! Vero illum est quasi omnis inventore culpa cumque laboriosam optio qui doloribus. Esse, nulla!</li>
+       <li>Similique doloribus temporibus omnis deleniti quasi beatae ullam qui reiciendis architecto, amet, possimus voluptatibus labore error veritatis accusamus quo ipsa rem vero placeat eos a praesentium sed quibusdam. Iste, eveniet?</li>
+       <li>Nemo, quos? Illo molestias, est minus, corrupti inventore dolore consectetur alias nemo et laborum tempora fugiat, placeat porro illum modi suscipit esse laudantium ex nam odit sunt saepe? Eligendi, voluptas!</li>
+       <li>Sequi sunt quis odit adipisci placeat accusamus explicabo neque. Eius quam a iste sint dolor facilis dicta minus corrupti enim vel ab eum atque nisi sed laudantium quia, voluptatem deserunt.</li>
+       <li>Labore, harum ducimus eius provident temporibus nulla minima quod asperiores nesciunt, ipsam, iusto quasi sunt assumenda odit ea aliquam in natus cumque maiores quaerat beatae! Id quaerat fugiat culpa qui.</li>
+       <li>Architecto dolorum minima repudiandae velit nihil nobis, quidem laudantium obcaecati aperiam molestias sequi, inventore cum repellat quam laboriosam dicta minus, beatae sapiente delectus. Neque deserunt suscipit soluta ex alias. Magnam.</li>
+   </ul>
+</body>
+</html>

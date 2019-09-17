@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+    <title>Document</title>
+    <style>
+       * {
+           box-sizing: border-box;
+           font-family: sans-serif;
+           font-size: 14px;
+       }
+       body {
+           display: flex;
+           flex-direction: column;
+           margin: 0;
+           height: 100vh;
+       }
+       ul {
+           list-style-type: none;
+           display: flex;
+           
+       }
+       li {
+           padding: 0 10px;
+        
+        }
+       a {
+           text-decoration: none;
+           color: gray;
+       }
+       a:hover {
+           text-decoration: underline;
+       }
+       header {
+           display: flex;
+           justify-content: space-between;
+       }
+       main {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-grow: 1;
+       }
+       #round {
+           color: white;
+           background-color: rgb(247, 150, 6);
+           border-radius: 50px;
+           padding: 5px 10px;
+           font-size: 20px;
+       }
+       #mid {
+           display: flex;
+           flex-direction: column;
+           width: 45%;
+           height: 300px;;
+       }
+       #logo {
+           text-align: center;
+           width: 100%;
+           height: 40%;
+       }
+       img {
+           
+           width: 50%;
+           height: 100%;
+       }
+       input {
+           width: 100%;
+           height: 15%;
+           border-radius: 100px;
+           margin-bottom: 30px;
+           border: 1px solid lightgray;
+       }
+       input:hover {
+           border: 0;
+           box-shadow: 0 0 10px 10px lightgray;
+       }
+       button {
+          margin: 3px;
+          background-color: rgb(235, 237, 243);
+          color: gray;
+          padding: 10px;
+          border: 0;
+          border-radius: 5px;
+          
+       }
+       button:hover {
+          background-color: rgb(244, 246, 250);
+          color: rgb(58, 57, 57);
+          border: 1px solid rgb(58, 57, 57);
+       }
+       #bb {
+          text-align: center;
+          width: 100%;
+           
+       }
+       footer {
+           background-color:rgb(231, 229, 229);
+           flex-basis: 10%;
+       }
+       #f1 {
+           border-top: 1px solid rgb(180, 179, 179);
+           padding: 10px 30px;
+           color: gray;
+       }
+       #f2 {
+           border-top: 1px solid rgb(180, 179, 179);
+           display: flex;
+           justify-content: space-between;
+           padding: 0 10px;
+       }
+
+    </style>
+</head>
+<body>
+    <header>
+        <ul id="u1">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
+        </ul>
+        <ul id="u2">
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#"><i class="fas fa-th"></i></a></li>
+            <li><a href="#"><span id="round">T</span></a></li>
+        </ul>
+    </header>
+    <main>
+        <div id="mid">
+           <div id="logo"><img src="http://pngimg.com/uploads/google/google_PNG19644.png"></div>
+           <input type="text">
+           <div id="bb">
+              <button id="b1">Google Search</button>
+              <button id="b2">I'm Feeling Lucky</button>
+           </div>
+        </div>
+    </main>
+    <footer>
+        <div id="f1">Germany</div>
+        <div id="f2">
+            <ul id="fl1">
+                <li><a href="#">Advertizing</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">How Search works</a></li>
+            </ul>
+            <ul id="fl2">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

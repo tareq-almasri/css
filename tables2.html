@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        td {
+            width: 80px;
+        }
+
+        tr:nth-child(odd) td:first-child {
+            border-left: 4px solid red;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) td:first-child {
+            border-left: 4px solid green;
+            padding: 10px;
+        }
+
+        td:nth-child(n+2) {
+            border-left: 4px solid gray;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #c0c0c0;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #efefef;
+        }
+        tr:first-child {
+            background-color: #888;
+            color: white;
+        }
+        tr:nth-child(7) td:nth-child(2),
+        tr:nth-child(4) td:nth-child(2) {
+            background-color: #ffbbbb;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>asdsf</td>
+            <td>asdsd</td>
+            <td>fdsf</td>
+        </tr>
+        <tr>
+            <td>dfdf</td>
+            <td>dfsdfd</td>
+            <td>dfdf</td>
+        </tr>
+        <tr>
+            <td>sfdf</td>
+            <td>sfdf</td>
+            <td>dsfdf</td>
+        </tr>
+        <tr>
+            <td>dfdfsf</td>
+            <td>dfdffge</td>
+            <td>ewrewf</td>
+        </tr>
+        <tr>
+            <td>dvvsdd</td>
+            <td>dvsadf</td>
+            <td>cxvvv</td>
+        </tr>
+        <tr>
+            <td>sfgegg</td>
+            <td>vffb</td>
+            <td>sdfr</td>
+        </tr>
+        <tr>
+            <td>sfgegg</td>
+            <td>vffb</td>
+            <td>sdfr</td>
+        </tr>
+    </table>
+</body>
+
+</html>

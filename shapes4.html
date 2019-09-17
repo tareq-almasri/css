@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shapes - Exercise #4 - CSS Grid gallery with shape-shadow</title>
+  <style>
+    /* setup the grid here */
+    #grid-gallery {
+      width: 300px;
+      height: 300px;
+      border: 1px solid;
+      display: grid;
+      grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+      filter: drop-shadow(10px 10px 5px black);
+      /* background-image: url(http://unsplash.it/300/300); */
+
+    }
+    /* load the same unsplash image into all child divs */
+    #grid-gallery > div {
+        background-image: url(http://unsplash.it/100/100);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    /* place here the selectors for the individual items. 
+    And make the desired shapes out of them please... */
+    #grid-gallery :first-child {
+        grid-area: 1/1/2/2;
+        clip-path: polygon(0 0,100% 0,100% 85%,75% 85%,75% 100%,50% 85%,0 85%);
+        position: relative;
+    }
+    #grid-gallery :nth-child(2){
+         grid-area: 1/3/2/4;
+         clip-path: polygon(50% 0, 60% 25%,100% 25%,70% 55%,90% 100%, 50% 80%,10% 100%,30% 55%,0 25%,40% 25%)
+    }
+    #grid-gallery :nth-child(3){
+        text-align: center;
+       font-size: 4rem;
+        color: transparent;
+        font-weight: 1000;
+        grid-area: 2/1/3/4;
+        -webkit-background-clip: text;
+    }
+    #grid-gallery :nth-child(4){
+       grid-area: 3/1/4/2;
+       clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+    }
+    #grid-gallery :last-child{
+         grid-area: 3/3/4/4;
+         clip-path: polygon(0 0,100% 0,100% 85%,75% 85%,75% 100%,50% 85%,0 85%);
+         transform: scalex(-1);
+    }
+    #grid-gallery :first-child::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        background-color: white;
+        clip-path: polygon(0 0,100% 0,100% 85%,75% 85%,75% 100%,50% 85%,0 85%);
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="grid-gallery">
+    <div></div>
+    <div></div>
+    <div>CSS Grid</div>
+    <div></div>
+    <div></div>
+  </div>
+
+</body>
+
+</html>

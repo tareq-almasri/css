@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Flexbox Grow & Basis</title>
+    <style>
+    /* Use flexbox to display all divs in one column on the right of the page.*/
+
+body {
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+    height: 100vh;
+    border: 5px solid green;
+    
+}
+
+body > * {
+    box-sizing: border-box;
+    margin: 0;
+    height: 100px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    text-align: center;
+}
+
+main {
+   flex-basis: 100%;
+   height: 98.5vh;
+} 
+
+aside {
+    display: none;
+    
+}
+@media only screen and (min-width: 601px){
+      main {
+        flex-basis: 80%;
+       }
+      aside {
+          display: block;
+          height: 98.5vh;
+          flex-basis: 20%;
+          
+      }
+}
+@media only screen and (min-width: 801px){
+      body {
+          margin: 0 10%;
+      }
+      main {
+        flex-basis: 70%;
+       }
+      aside {
+          
+          flex-basis: 30%;
+          
+      }
+}
+    </style>
+    
+</head>
+<body>
+    <main>Main Content</main>
+    <aside>Info Column</aside>
+</body>
+</html>

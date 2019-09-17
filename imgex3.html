@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exercise 3 - Flexbox images & gradients</title>
+  <style>
+    /* your CSS goes here... */
+    #flexy {
+        display: flex;
+        height: 200px;
+        justify-content:space-between;
+    }
+    #mid {
+      background-image: linear-gradient(blue,purple);
+      
+      width: 30%;
+    }
+    img {
+      width: 200px;
+      object-fit: cover;
+      object-position: 10%;
+    }
+   
+  </style>
+</head>
+<body>
+  <h1>Flex images and gradient</h1>
+
+  <div id="flexy">
+    <img src="https://d17fnq9dkz9hgj.cloudfront.net/breed-uploads/2018/09/dog-landing-hero-lg.jpg?bust=1536935129&width=1080" alt="">
+    <div id="mid"><span>hello world</span></div>
+    <img src="https://d17fnq9dkz9hgj.cloudfront.net/breed-uploads/2018/09/dog-landing-hero-lg.jpg?bust=1536935129&width=1080" alt="">
+  </div>
+
+</body>
+</html>

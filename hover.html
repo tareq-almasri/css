@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exercise Positioning # - The tooltip menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <style>
+      body{
+          margin: 0;
+          box-sizing: border-box;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      nav{
+          display: flex;
+          justify-content: space-around;
+          width:80%;
+         
+      }
+      nav>div{
+         position: relative; 
+         
+      }
+      i{
+          font-size: 3rem;
+      }
+      span{
+          position: absolute;
+          top: 120%;
+          left: 50%;
+          transform: translatex(-50%);
+          background-color: black;
+          color: white;
+          border-radius: 100px;
+          padding: 0 30px;
+          display: none;
+      }
+      span::after{
+          content: '';
+          position: absolute;
+          top: -30%;
+          left: 50%;
+          background-color: black;
+          width: 15px;
+          height: 15px;
+          transform: translate(-50%) rotate(45deg);
+          z-index: -1;
+      }
+      i:hover + span{  
+          display: block;
+      }
+          
+
+  </style>
+</head>
+
+<body>
+
+  <nav>
+
+    <div class="icon">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </div>
+    <div class="icon">
+      <i class="fas fa-cloud-upload-alt"></i>
+      <span>Upload</span>
+    </div>
+    <div class="icon">
+      <i class="far fa-image"></i>
+      <span>Images</span>
+    </div>
+    <div class="icon">
+      <i class="fas fa-cog"></i>
+      <span>Settings</span>
+    </div>
+
+  </nav>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       body {
+           background: rgb(63, 179, 63);
+       }
+       #girl {
+          background: url(https://i.pinimg.com/originals/5d/25/8c/5d258cb91b51945ee93f32284e3c0744.png);
+          width: 55px;
+          height: 127px;
+          
+          animation: walk 1s steps(10) infinite,
+                     forward 10s linear infinite;
+                     
+       }
+       @keyframes walk {
+           from {
+              background-position-y: top;
+               background-position-x: 55px;
+           }
+           to {
+               background-position-y: top;
+               background-position-x: right;
+           }
+       }
+       @keyframes forward {
+           from {
+               transform: translateX(-100px);
+           }
+           to {
+               transform: translateX(100vw);
+           }
+       }
+    </style>
+</head>
+<body>
+    <div id="girl"></div>
+</body>
+</html>
